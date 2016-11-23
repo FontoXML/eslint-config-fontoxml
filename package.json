@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-fontoxml",
   "version": "1.0.0",
-  "description": "ESLint config for FontoXML platform and projects",
+  "description": "ESLint configuration for FontoXML platform and projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,9 @@
     "fontoxml"
   ],
   "author": "The FontoXML Team",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FontoXML/eslint-config-fontoxml.git"
+  }
 }
