@@ -14,6 +14,6 @@ Create an `.eslintrc` file extending the FontoXML configuration somewhere in you
 
 ```
 {
-	extends: [ 'fontoxml' ]
+	"extends": [ "fontoxml" ]
 }
 ```
