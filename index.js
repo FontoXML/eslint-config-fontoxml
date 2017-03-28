@@ -153,8 +153,8 @@ module.exports = {
 		// Only quote properties when necessary for any of them
 		'quote-props': ['warn', 'consistent-as-needed'],
 
-		// Use single quotes
-		'quotes': ['warn', 'single'],
+		// Use single quotes, but allow for template literals when necessary
+		'quotes': ['warn', 'single', { 'allowTemplateLiterals': true }],
 
 		// Never depend on automatic semicolon insertion
 		'semi': ['warn', 'always'],
