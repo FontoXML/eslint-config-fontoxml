@@ -1,10 +1,15 @@
 module.exports = {
 	parserOptions: {
-		ecmaVersion: 6,
+		ecmaVersion: 2018,
 		sourceType: 'module',
 		ecmaFeatures: {
-			experimentalObjectRestSpread: true,
 			jsx: true
+		}
+	},
+
+	settings: {
+		react: { 
+			version: '16.0.0' 
 		}
 	},
 

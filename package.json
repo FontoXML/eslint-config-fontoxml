@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-fontoxml",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "ESLint configuration for FontoXML platform and projects",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "url": "https://github.com/FontoXML/eslint-config-fontoxml.git"
   },
   "peerDependencies": {
-    "eslint": "^3.9.0 || ^4.0.0",
-    "eslint-plugin-react": "^6.7.1 || ^7.0.0"
+    "eslint": "5.9.0",
+    "eslint-plugin-react": "7.11.1"
   }
 }
