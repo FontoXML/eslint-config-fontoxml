@@ -12,14 +12,5 @@ module.exports = {
 				'useTabs': true
 			}
 		]
-	},
-	overrides: [
-		{
-			files: '*.js',
-			excludedFiles: '*.jsx.js',
-			rules: {
-				'prettier/prettier': 0
-			}
-		}
-	]
+	}
 };

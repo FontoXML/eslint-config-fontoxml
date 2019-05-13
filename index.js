@@ -8,8 +8,8 @@ module.exports = {
 	},
 
 	settings: {
-		react: { 
-			version: '16.0.0' 
+		react: {
+			version: '16.0.0'
 		}
 	},
 

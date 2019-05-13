@@ -17,12 +17,10 @@
     "url": "https://github.com/FontoXML/eslint-config-fontoxml.git"
   },
   "peerDependencies": {
-    "eslint": "5.9.0",
-    "eslint-plugin-react": "7.11.1"
-  },
-  "optionalDependencies": {
     "babel-eslint": "10.0.1",
+    "eslint": "5.9.0",
     "eslint-config-prettier": "3.3.0",
-    "eslint-plugin-prettier": "3.0.0"
+    "eslint-plugin-prettier": "3.0.0",
+    "eslint-plugin-react": "7.11.1"
   }
 }
