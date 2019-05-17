@@ -4,7 +4,7 @@ module.exports = {
 	plugins: ['prettier'],
 	rules: {
 		'prettier/prettier': [
-			'error',
+			'warn',
 			{
 				printWidth: 100,
 				quoteProps: 'consistent',

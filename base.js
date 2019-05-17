@@ -34,7 +34,7 @@ module.exports = {
 		// --- BUILT-IN RULES ---
 
 		// Do not use == and != (just be explicit when you allow multiple values)
-		eqeqeq: ['error', 'always'],
+		'eqeqeq': ['error', 'always'],
 
 		// Do not use arguments.caller / arguments.callee (forbidden in strict mode)
 		'no-caller': 'error',
@@ -61,6 +61,9 @@ module.exports = {
 		// Shadowing is ok, and can improve clarity (e.g., in a reduce)
 		// (default from eslint:recommended)
 		// 'no-shadow': 'off',
+
+		// Disallow the following global variables
+		'no-restricted-globals': ['document', 'error', 'event', 'fdescribe', 'status'],
 
 		// But shadowing of things like NaN or undefined is just stupid
 		'no-shadow-restricted-names': 'error',
@@ -91,7 +94,7 @@ module.exports = {
 		'prefer-const': 'error',
 
 		// Always require a radix for parseInt
-		radix: ['error', 'always'],
+		'radix': ['error', 'always'],
 
 		// --- STYLE ---
 		// All set to 'warn' for now...
@@ -109,7 +112,7 @@ module.exports = {
 		'comma-style': ['warn', 'last'],
 
 		// Always use curly braces
-		curly: ['warn', 'all'],
+		'curly': ['warn', 'all'],
 
 		// End files with a newline
 		'eol-last': 'warn',
@@ -162,10 +165,10 @@ module.exports = {
 		'quote-props': ['warn', 'consistent-as-needed'],
 
 		// Use single quotes, but allow for template literals when necessary
-		quotes: ['warn', 'single', { allowTemplateLiterals: true }],
+		'quotes': ['warn', 'single', { allowTemplateLiterals: true }],
 
 		// Never depend on automatic semicolon insertion
-		semi: ['warn', 'always'],
+		'semi': ['warn', 'always'],
 
 		// Use space after semicolon, not before
 		'semi-spacing': ['warn', { before: false, after: true }],
@@ -204,15 +207,15 @@ module.exports = {
 				// instead of ${key}, use ${value}
 				preferType: {
 					'*': 'any',
-					Boolean: 'boolean',
-					Number: 'number',
-					String: 'string',
+					'Boolean': 'boolean',
+					'Number': 'number',
+					'String': 'string',
 					//	'Array': 'Type[]',
 					//	'array': 'Type[]',
 					//	'Object': '{key: Type}',
 					//	'object': '{key: Type}',
-					Function: 'function(Type, Type): Type',
-					function: 'function(Type, Type): Type'
+					'Function': 'function(Type, Type): Type',
+					'function': 'function(Type, Type): Type'
 				},
 				// Only require @return if the function contains a return statement
 				requireReturn: false,
