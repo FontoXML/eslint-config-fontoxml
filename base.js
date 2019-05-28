@@ -58,12 +58,11 @@ module.exports = {
 		// Easy enough to hide using higher-order functions, but still usually a code smell that can be avoided
 		'no-loop-func': 'warn',
 
-		// Shadowing is ok, and can improve clarity (e.g., in a reduce)
-		// (default from eslint:recommended)
-		// 'no-shadow': 'off',
-
 		// Disallow the following global variables
 		'no-restricted-globals': ['error', 'document', 'error', 'event', 'fdescribe', 'status'],
+
+		// Shadowing variables currently may cause issues in Fonto's build tools
+		'no-shadow': ['error', { builtinGlobals: true, hoist: 'all', allow: [] }],
 
 		// But shadowing of things like NaN or undefined is just stupid
 		'no-shadow-restricted-names': 'error',
