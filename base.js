@@ -63,7 +63,7 @@ module.exports = {
 		// 'no-shadow': 'off',
 
 		// Disallow the following global variables
-		'no-restricted-globals': ['document', 'error', 'event', 'fdescribe', 'status'],
+		'no-restricted-globals': ['error', 'document', 'error', 'event', 'fdescribe', 'status'],
 
 		// But shadowing of things like NaN or undefined is just stupid
 		'no-shadow-restricted-names': 'error',

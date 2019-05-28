@@ -1,6 +1,6 @@
 {
   "name": "@fontoxml/eslint-config",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "ESLint configuration for FontoXML platform and projects",
   "main": "index.js",
   "scripts": {
