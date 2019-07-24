@@ -61,8 +61,8 @@ module.exports = {
 		// Disallow the following global variables
 		'no-restricted-globals': ['error', 'document', 'error', 'event', 'fdescribe', 'status'],
 
-		// Shadowing variables currently may cause issues in Fonto's build tools
-		'no-shadow': ['error', { builtinGlobals: true, hoist: 'all', allow: [] }],
+		// Shadowing is usually bad practice and causes confusing code
+		'no-shadow': ['warn', { builtinGlobals: false, hoist: 'all', allow: [] }],
 
 		// But shadowing of things like NaN or undefined is just stupid
 		'no-shadow-restricted-names': 'error',
