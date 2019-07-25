@@ -89,6 +89,9 @@ module.exports = {
 		// Using 'with' only obfuscates code
 		'no-with': 'error',
 
+		// Prefer anything but 'var'
+		'no-var': 'warn',
+
 		// Prefer const instead of let if a variable is not reassigned
 		'prefer-const': 'error',
 
