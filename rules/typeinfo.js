@@ -1,0 +1,62 @@
+// Rules regarding @typescript-eslint/eslint-plugin.
+// @NOTE: These rules require type information to work properly. They are not
+// enabled by default because they require additional, project-specific,
+// configuration and have a noticable impact on performance.
+// See: https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
+module.exports = {
+	extends: [
+		// Configure both the plugin and its recommended rules, and disable
+		// redundant and conflicting eslint rules.
+		'plugin:@typescript-eslint/recommended-requiring-type-checking',
+	],
+	rules: {
+		// @NOTE: When enabling rules listed below, make sure to disable any
+		// conflicting eslint rules. See the documentation for each rule for
+		// details.
+		// See: https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
+		'@typescript-eslint/dot-notation': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/naming-convention': 'off', // @TODO
+		'@typescript-eslint/no-base-to-string': 'off', // @TODO
+		'@typescript-eslint/no-confusing-void-expression': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/no-throw-literal': 'off', // @TODO
+		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/no-unnecessary-condition': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/no-unnecessary-qualifier': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/no-unnecessary-type-arguments': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/no-unsafe-argument': 'off', // @TODO
+		'@typescript-eslint/non-nullable-type-assertion-style': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/prefer-includes': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/prefer-nullish-coalescing': 'off', // @TODO
+		'@typescript-eslint/prefer-readonly': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/prefer-readonly-parameter-types': 'off', // @TODO
+		'@typescript-eslint/prefer-reduce-type-parameter': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/prefer-string-starts-ends-with': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/promise-function-async': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/require-array-sort-compare': 'off', // @TODO
+		'@typescript-eslint/return-await': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/strict-boolean-expressions': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/switch-exhaustiveness-check': 'off', // @TODO
+
+		// @TODO: Check the rules recommended by @typescript-eslint/eslint-plugin
+		// and determine whether they require an override. If not, remove them
+		// here. Note that some eslint rules are turned off because they're
+		// redundant or incompatible with TypeScript.
+		// '@typescript-eslint/await-thenable': 'error', // @TODO @RECOMMENDED
+		// '@typescript-eslint/no-floating-promises': 'error', // @TODO @RECOMMENDED
+		// '@typescript-eslint/no-for-in-array': 'error', // @TODO @RECOMMENDED
+		// 'no-implied-eval': 'off', // @TODO @RECOMMENDED
+		// '@typescript-eslint/no-implied-eval': 'error', // @TODO @RECOMMENDED
+		// '@typescript-eslint/no-misused-promises': 'error', // @TODO @RECOMMENDED
+		// '@typescript-eslint/no-unnecessary-type-assertion': 'error', // @TODO @RECOMMENDED @AUTOFIX
+		// '@typescript-eslint/no-unsafe-assignment': 'error', // @TODO @RECOMMENDED
+		// '@typescript-eslint/no-unsafe-call': 'error', // @TODO @RECOMMENDED
+		// '@typescript-eslint/no-unsafe-member-access': 'error', // @TODO @RECOMMENDED
+		// '@typescript-eslint/no-unsafe-return': 'error', // @TODO @RECOMMENDED
+		// '@typescript-eslint/prefer-regexp-exec': 'error', // @TODO @RECOMMENDED @AUTOFIX
+		// 'require-await': 'off', // @TODO @RECOMMENDED
+		// '@typescript-eslint/require-await': 'error', // @TODO @RECOMMENDED
+		// '@typescript-eslint/restrict-plus-operands': 'error', // @TODO @RECOMMENDED
+		// '@typescript-eslint/restrict-template-expressions': 'error', // @TODO @RECOMMENDED
+		// '@typescript-eslint/unbound-method': 'error', // @TODO @RECOMMENDED
+	},
+};
