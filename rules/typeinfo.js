@@ -14,27 +14,27 @@ module.exports = {
 		// conflicting eslint rules. See the documentation for each rule for
 		// details.
 		// See: https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
-		'@typescript-eslint/dot-notation': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/dot-notation': 'warn', // @AUTOFIX
 		'@typescript-eslint/naming-convention': 'off', // @TODO
 		'@typescript-eslint/no-base-to-string': 'off', // @TODO
-		'@typescript-eslint/no-confusing-void-expression': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/no-confusing-void-expression': 'error', // @AUTOFIX
 		'@typescript-eslint/no-throw-literal': 'off', // @TODO
-		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/no-unnecessary-condition': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/no-unnecessary-qualifier': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/no-unnecessary-type-arguments': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'warn', // @AUTOFIX
+		'@typescript-eslint/no-unnecessary-condition': 'error', // @AUTOFIX
+		'@typescript-eslint/no-unnecessary-qualifier': 'error', // @AUTOFIX
+		'@typescript-eslint/no-unnecessary-type-arguments': 'warn', // @AUTOFIX
 		'@typescript-eslint/no-unsafe-argument': 'off', // @TODO
-		'@typescript-eslint/non-nullable-type-assertion-style': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/prefer-includes': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/non-nullable-type-assertion-style': 'warn', // @AUTOFIX
+		'@typescript-eslint/prefer-includes': 'error', // @AUTOFIX
 		'@typescript-eslint/prefer-nullish-coalescing': 'off', // @TODO
-		'@typescript-eslint/prefer-readonly': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/prefer-readonly': 'error', // @AUTOFIX
 		'@typescript-eslint/prefer-readonly-parameter-types': 'off', // @TODO
-		'@typescript-eslint/prefer-reduce-type-parameter': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/prefer-string-starts-ends-with': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/promise-function-async': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/prefer-reduce-type-parameter': 'error', // @AUTOFIX
+		'@typescript-eslint/prefer-string-starts-ends-with': 'error', // @AUTOFIX
+		'@typescript-eslint/promise-function-async': 'warn', // @AUTOFIX
 		'@typescript-eslint/require-array-sort-compare': 'off', // @TODO
-		'@typescript-eslint/return-await': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/strict-boolean-expressions': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/return-await': ['error', 'in-try-catch'], // @AUTOFIX
+		'@typescript-eslint/strict-boolean-expressions': 'error', // @AUTOFIX
 		'@typescript-eslint/switch-exhaustiveness-check': 'off', // @TODO
 
 		// @TODO: Check the rules recommended by @typescript-eslint/eslint-plugin

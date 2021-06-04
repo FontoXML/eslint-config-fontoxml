@@ -17,27 +17,36 @@ module.exports = {
 		// conflicting eslint rules. See the documentation for each rule for
 		// details.
 		// See: https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
-		'@typescript-eslint/array-type': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/ban-tslint-comment': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/class-literal-property-style': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/consistent-indexed-object-style': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/array-type': ['warn', { default: 'array' }], // @AUTOFIX
+		'@typescript-eslint/ban-tslint-comment': 'error', // @AUTOFIX
+		'@typescript-eslint/class-literal-property-style': 'off', // @AUTOFIX
+		'@typescript-eslint/consistent-indexed-object-style': [
+			'warn',
+			'index-signature',
+		], // @AUTOFIX
 		'@typescript-eslint/consistent-type-assertions': 'off', // @TODO
-		'@typescript-eslint/consistent-type-definitions': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/consistent-type-imports': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/consistent-type-definitions': ['error', 'type'], // @AUTOFIX
+		'@typescript-eslint/consistent-type-imports': [
+			'error',
+			{ prefer: 'type-imports' },
+		], // @AUTOFIX
 		'@typescript-eslint/default-param-last': 'off', // @TODO
 		'@typescript-eslint/explicit-function-return-type': 'off', // @TODO
-		'@typescript-eslint/explicit-member-accessibility': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/explicit-member-accessibility': [
+			'warn',
+			{ accessibility: 'explicit' },
+		], // @AUTOFIX
 		'@typescript-eslint/init-declarations': 'off', // @TODO
-		'@typescript-eslint/lines-between-class-members': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/member-delimiter-style': 'off', // @TODO @AUTOFIX,
+		'@typescript-eslint/lines-between-class-members': 'warn', // @AUTOFIX
+		'@typescript-eslint/member-delimiter-style': 'warn', // @AUTOFIX,
 		'@typescript-eslint/member-ordering': 'off', // @TODO
-		'@typescript-eslint/method-signature-style': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/no-confusing-non-null-assertion': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/method-signature-style': ['warn', 'method'], // @AUTOFIX
+		'@typescript-eslint/no-confusing-non-null-assertion': 'error', // @AUTOFIX
 		'@typescript-eslint/no-dupe-class-members': 'off', // @TODO
 		'@typescript-eslint/no-duplicate-imports': 'off', // @TODO
-		'@typescript-eslint/no-dynamic-delete': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/no-dynamic-delete': 'off', // @AUTOFIX
 		'@typescript-eslint/no-extraneous-class': 'off', // @TODO
-		'@typescript-eslint/no-implicit-any-catch': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/no-implicit-any-catch': 'warn', // @AUTOFIX
 		'@typescript-eslint/no-invalid-this': 'off', // @TODO
 		'@typescript-eslint/no-invalid-void-type': 'off', // @TODO
 		'@typescript-eslint/no-loop-func': 'off', // @TODO
@@ -48,17 +57,17 @@ module.exports = {
 		'@typescript-eslint/no-require-imports': 'off', // @TODO
 		'@typescript-eslint/no-shadow': 'off', // @TODO
 		'@typescript-eslint/no-type-alias': 'off', // @TODO
-		'@typescript-eslint/no-unnecessary-type-constraint': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/no-unnecessary-type-constraint': 'error', // @AUTOFIX
 		'@typescript-eslint/no-unused-expressions': 'off', // @TODO
 		'@typescript-eslint/no-use-before-define': 'off', // @TODO
 		'@typescript-eslint/no-useless-constructor': 'off', // @TODO
 		'@typescript-eslint/prefer-enum-initializers': 'off', // @TODO
 		'@typescript-eslint/prefer-for-of': 'off', // @TODO
-		'@typescript-eslint/prefer-function-type': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/prefer-function-type': 'warn', // @AUTOFIX
 		'@typescript-eslint/prefer-literal-enum-member': 'off', // @TODO
 		'@typescript-eslint/prefer-optional-chain': 'off', // @TODO
-		'@typescript-eslint/prefer-ts-expect-error': 'off', // @TODO @AUTOFIX
-		'@typescript-eslint/sort-type-union-intersection-members': 'off', // @TODO @AUTOFIX
+		'@typescript-eslint/prefer-ts-expect-error': 'warn', // @AUTOFIX
+		'@typescript-eslint/sort-type-union-intersection-members': 'warn', // @AUTOFIX
 		'@typescript-eslint/typedef': 'off', // @TODO
 		'@typescript-eslint/unified-signatures': 'off', // @TODO
 

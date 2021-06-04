@@ -27,7 +27,7 @@ module.exports = {
 		'import/no-mutable-exports': 'off', // @TODO
 		'import/no-named-default': 'off', // @TODO
 		'import/no-named-export': 'off', // @TODO
-		'import/no-namespace': 'off', // @TODO @AUTOFIX
+		'import/no-namespace': 'warn', // @AUTOFIX
 		'import/no-nodejs-modules': 'off', // @TODO
 		'import/no-relative-packages': 'off', // @TODO
 		'import/no-relative-parent-imports': 'off', // @TODO

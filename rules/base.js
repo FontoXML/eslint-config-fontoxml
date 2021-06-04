@@ -13,7 +13,7 @@ module.exports = {
 		'array-callback-return': 'error',
 		'block-scoped-var': 'error',
 		'camelcase': 'off', // @TODO
-		'capitalized-comments': 'off', // @TODO @AUTOFIX
+		'capitalized-comments': 'off', // @AUTOFIX
 		'class-methods-use-this': 'off', // @TODO
 		'complexity': ['warn', 14],
 		'consistent-return': 'error',
@@ -35,7 +35,7 @@ module.exports = {
 		'id-match': 'off', // @TODO
 		'init-declarations': 'off', // @TODO
 		'line-comment-position': 'off', // @TODO
-		'lines-between-class-members': 'off', // @TODO @AUTOFIX
+		'lines-between-class-members': 'warn', // @AUTOFIX
 		'max-classes-per-file': 'off', // @TODO
 		'max-depth': 'off', // @TODO
 		'max-lines-per-function': 'off', // @TODO
@@ -44,7 +44,7 @@ module.exports = {
 		'max-params': 'off', // @TODO
 		'max-statements-per-line': 'off', // @TODO
 		'max-statements': 'off', // @TODO
-		'multiline-comment-style': 'off', // @TODO @AUTOFIX
+		'multiline-comment-style': 'off', // @AUTOFIX
 		// Turned off for @babel/eslint-plugin.
 		// See: https://www.npmjs.com/package/@babel/eslint-plugin
 		'new-cap': 'off',
@@ -76,7 +76,7 @@ module.exports = {
 		'no-label-var': 'off', // @TODO
 		'no-labels': 'error',
 		'no-lone-blocks': 'error',
-		'no-lonely-if': 'off', // @TODO @AUTOFIX
+		'no-lonely-if': 'warn', //  @AUTOFIX
 		'no-loop-func': 'off',
 		'no-loss-of-precision': 'error',
 		'no-magic-numbers': 'off',
@@ -108,11 +108,11 @@ module.exports = {
 		'no-template-curly-in-string': 'off', // @TODO
 		'no-ternary': 'off', // @TODO
 		'no-throw-literal': 'off',
-		'no-undef-init': 'off', // @TODO @AUTOFIX
+		'no-undef-init': 'warn', //  @AUTOFIX
 		'no-undefined': 'off', // @TODO
 		'no-underscore-dangle': 'off', // @TODO
 		'no-unmodified-loop-condition': 'error',
-		'no-unneeded-ternary': 'off', // @TODO @AUTOFIX
+		'no-unneeded-ternary': 'warn', //  @AUTOFIX
 		'no-unreachable-loop': 'off', // @TODO
 		'no-unsafe-optional-chaining': 'error',
 		// Turned off for @babel/eslint-plugin.
@@ -121,29 +121,29 @@ module.exports = {
 		'no-use-before-define': 'off', // @TODO
 		'no-useless-backreference': 'off', // @TODO
 		'no-useless-call': 'off', // @TODO
-		'no-useless-computed-key': 'off', // @TODO @AUTOFIX
+		'no-useless-computed-key': 'warn', //  @AUTOFIX
 		'no-useless-concat': 'off', // @TODO
 		'no-useless-constructor': 'off', // @TODO
-		'no-useless-rename': 'off', // @TODO @AUTOFIX
-		'no-useless-return': 'off', // @TODO @AUTOFIX
-		'no-var': 'off', // @TODO @AUTOFIX
+		'no-useless-rename': 'warn', //  @AUTOFIX
+		'no-useless-return': 'warn', //  @AUTOFIX
+		'no-var': 'error', //  @AUTOFIX
 		'no-void': 'off', // @TODO
 		'no-warning-comments': 'off', // @TODO
-		'object-shorthand': 'off', // @TODO @AUTOFIX
-		'one-var': 'off', // @TODO @AUTOFIX
-		'operator-assignment': 'off', // @TODO @AUTOFIX
-		'padding-line-between-statements': 'off', // @TODO @AUTOFIX
-		'prefer-const': 'off', // @TODO @AUTOFIX
-		'prefer-destructuring': 'off', // @TODO @AUTOFIX
-		'prefer-exponentiation-operator': 'off', // @TODO @AUTOFIX
+		'object-shorthand': 'warn', //  @AUTOFIX
+		'one-var': ['warn', 'never'], //  @AUTOFIX
+		'operator-assignment': 'off', // @AUTOFIX
+		'padding-line-between-statements': 'off', // @AUTOFIX
+		'prefer-const': 'error', // @AUTOFIX
+		'prefer-destructuring': 'off', // @AUTOFIX
+		'prefer-exponentiation-operator': 'off', // @AUTOFIX
 		'prefer-named-capture-group': 'off', // @TODO
-		'prefer-numeric-literals': 'off', // @TODO @AUTOFIX
-		'prefer-object-spread': 'off', // @TODO @AUTOFIX
+		'prefer-numeric-literals': 'error', // @AUTOFIX
+		'prefer-object-spread': 'warn', // @AUTOFIX
 		'prefer-promise-reject-errors': 'off', // @TODO
 		'prefer-regex-literals': 'off', // @TODO
 		'prefer-rest-params': 'off', // @TODO
 		'prefer-spread': 'off', // @TODO
-		'prefer-template': 'off', // @TODO @AUTOFIX
+		'prefer-template': 'warn', //  @AUTOFIX
 		'radix': 'off', // @TODO
 		'require-atomic-updates': 'off', // @TODO
 		'require-await': 'off', // @TODO
@@ -152,12 +152,12 @@ module.exports = {
 		// See: https://www.npmjs.com/package/eslint-plugin-simple-import-sort
 		'sort-imports': 'off',
 		'sort-keys': 'off', // @TODO
-		'sort-vars': 'off', // @TODO @AUTOFIX
-		'spaced-comment': 'off', // @TODO @AUTOFIX
-		'strict': 'off', // @TODO @AUTOFIX
+		'sort-vars': 'off', // @AUTOFIX
+		'spaced-comment': 'warn', // @AUTOFIX
+		'strict': 'off', // @AUTOFIX
 		'symbol-description': 'off', // @TODO
 		'vars-on-top': 'off', // @TODO
-		'yoda': 'off', // @TODO @AUTOFIX
+		'yoda': 'error', // @AUTOFIX
 
 		// @TODO: Check the special-case rules of eslint-config-prettier and
 		// determine whether they need to be enabled anyway. Move the
