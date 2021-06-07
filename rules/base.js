@@ -76,7 +76,7 @@ module.exports = {
 		'no-label-var': 'off', // @TODO
 		'no-labels': 'error',
 		'no-lone-blocks': 'error',
-		'no-lonely-if': 'warn', //  @AUTOFIX
+		'no-lonely-if': 'warn', // @AUTOFIX
 		'no-loop-func': 'off',
 		'no-loss-of-precision': 'error',
 		'no-magic-numbers': 'off',
@@ -108,11 +108,11 @@ module.exports = {
 		'no-template-curly-in-string': 'off', // @TODO
 		'no-ternary': 'off', // @TODO
 		'no-throw-literal': 'off',
-		'no-undef-init': 'warn', //  @AUTOFIX
+		'no-undef-init': 'warn', // @AUTOFIX
 		'no-undefined': 'off', // @TODO
 		'no-underscore-dangle': 'off', // @TODO
 		'no-unmodified-loop-condition': 'error',
-		'no-unneeded-ternary': 'warn', //  @AUTOFIX
+		'no-unneeded-ternary': 'warn', // @AUTOFIX
 		'no-unreachable-loop': 'off', // @TODO
 		'no-unsafe-optional-chaining': 'error',
 		// Turned off for @babel/eslint-plugin.
@@ -121,16 +121,16 @@ module.exports = {
 		'no-use-before-define': 'off', // @TODO
 		'no-useless-backreference': 'off', // @TODO
 		'no-useless-call': 'off', // @TODO
-		'no-useless-computed-key': 'warn', //  @AUTOFIX
+		'no-useless-computed-key': 'warn', // @AUTOFIX
 		'no-useless-concat': 'off', // @TODO
 		'no-useless-constructor': 'off', // @TODO
-		'no-useless-rename': 'warn', //  @AUTOFIX
-		'no-useless-return': 'warn', //  @AUTOFIX
-		'no-var': 'error', //  @AUTOFIX
+		'no-useless-rename': 'warn', // @AUTOFIX
+		'no-useless-return': 'warn', // @AUTOFIX
+		'no-var': 'error', // @AUTOFIX
 		'no-void': 'off', // @TODO
 		'no-warning-comments': 'off', // @TODO
-		'object-shorthand': 'warn', //  @AUTOFIX
-		'one-var': ['warn', 'never'], //  @AUTOFIX
+		'object-shorthand': 'warn', // @AUTOFIX
+		'one-var': ['warn', 'never'], // @AUTOFIX
 		'operator-assignment': 'off', // @AUTOFIX
 		'padding-line-between-statements': 'off', // @AUTOFIX
 		'prefer-const': 'error', // @AUTOFIX
@@ -143,7 +143,7 @@ module.exports = {
 		'prefer-regex-literals': 'off', // @TODO
 		'prefer-rest-params': 'off', // @TODO
 		'prefer-spread': 'off', // @TODO
-		'prefer-template': 'warn', //  @AUTOFIX
+		'prefer-template': 'warn', // @AUTOFIX
 		'radix': 'off', // @TODO
 		'require-atomic-updates': 'off', // @TODO
 		'require-await': 'off', // @TODO

@@ -37,6 +37,8 @@ module.exports = {
 			{ accessibility: 'explicit' },
 		], // @AUTOFIX
 		'@typescript-eslint/init-declarations': 'off', // @TODO
+		// Override: disabled for TypeScript-specific rule.
+		'lines-between-class-members': 'off',
 		'@typescript-eslint/lines-between-class-members': 'warn', // @AUTOFIX
 		'@typescript-eslint/member-delimiter-style': 'warn', // @AUTOFIX,
 		'@typescript-eslint/member-ordering': 'off', // @TODO

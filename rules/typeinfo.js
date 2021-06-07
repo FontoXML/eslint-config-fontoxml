@@ -14,6 +14,8 @@ module.exports = {
 		// conflicting eslint rules. See the documentation for each rule for
 		// details.
 		// See: https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
+		// Override: disabled for TypeScript-specific rule.
+		'dot-notation': 'off',
 		'@typescript-eslint/dot-notation': 'warn', // @AUTOFIX
 		'@typescript-eslint/naming-convention': 'off', // @TODO
 		'@typescript-eslint/no-base-to-string': 'off', // @TODO
@@ -33,6 +35,8 @@ module.exports = {
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error', // @AUTOFIX
 		'@typescript-eslint/promise-function-async': 'warn', // @AUTOFIX
 		'@typescript-eslint/require-array-sort-compare': 'off', // @TODO
+		// Override: disabled for TypeScript-specific rule.
+		'no-return-await': 'off',
 		'@typescript-eslint/return-await': ['error', 'in-try-catch'], // @AUTOFIX
 		'@typescript-eslint/strict-boolean-expressions': 'error', // @AUTOFIX
 		'@typescript-eslint/switch-exhaustiveness-check': 'off', // @TODO
