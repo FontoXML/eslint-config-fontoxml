@@ -61,6 +61,18 @@ module.exports = {
 		'@typescript-eslint/no-type-alias': 'off', // @TODO
 		'@typescript-eslint/no-unnecessary-type-constraint': 'error', // @AUTOFIX
 		'@typescript-eslint/no-unused-expressions': 'off', // @TODO
+		// Override: allow unused vars prefixed with underscores.
+		'@typescript-eslint/no-unused-vars': [
+			'warn',
+			{
+				args: 'all',
+				argsIgnorePattern: '^_',
+				caughtErrors: 'all',
+				caughtErrorsIgnorePattern: '^_',
+				vars: 'all',
+				varsIgnorePattern: '^_',
+			},
+		], // @RECOMMENDED
 		'@typescript-eslint/no-use-before-define': 'off', // @TODO
 		'@typescript-eslint/no-useless-constructor': 'off', // @TODO
 		'@typescript-eslint/prefer-enum-initializers': 'off', // @TODO

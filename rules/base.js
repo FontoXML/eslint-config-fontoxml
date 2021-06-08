@@ -118,6 +118,18 @@ module.exports = {
 		// Turned off for @babel/eslint-plugin.
 		// See: https://www.npmjs.com/package/@babel/eslint-plugin
 		'no-unused-expressions': 'off',
+		// Override: allow unused vars prefixed with underscores.
+		'no-unused-vars': [
+			'warn',
+			{
+				args: 'all',
+				argsIgnorePattern: '^_',
+				caughtErrors: 'all',
+				caughtErrorsIgnorePattern: '^_',
+				vars: 'all',
+				varsIgnorePattern: '^_',
+			},
+		], // @RECOMMENDED
 		'no-use-before-define': 'off', // @TODO
 		'no-useless-backreference': 'off', // @TODO
 		'no-useless-call': 'off', // @TODO
