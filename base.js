@@ -1,6 +1,5 @@
 module.exports = {
 	env: {
-		browser: true,
 		es2021: true,
 	},
 	// @TODO: Consider configuring https://www.npmjs.com/package/eslint-plugin-jsdoc
