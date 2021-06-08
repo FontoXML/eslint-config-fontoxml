@@ -196,7 +196,6 @@ module.exports = {
 		// 'no-empty-character-class': 'error', // @TODO @RECOMMENDED
 		// 'no-empty-pattern': 'error', // @TODO @RECOMMENDED
 		// 'no-ex-assign': 'error', // @TODO @RECOMMENDED
-		// 'no-extra-boolean-cast': 'error', // @TODO @RECOMMENDED @AUTOFIX
 		// 'no-fallthrough': 'error', // @TODO @RECOMMENDED
 		// 'no-func-assign': 'error', // @TODO @RECOMMENDED
 		// 'no-global-assign': 'error', // @TODO @RECOMMENDED
@@ -210,7 +209,6 @@ module.exports = {
 		// 'no-octal': 'error', // @TODO @RECOMMENDED
 		// 'no-prototype-builtins': 'error', // @TODO @RECOMMENDED
 		// 'no-redeclare': 'error', // @TODO @RECOMMENDED
-		// 'no-regex-spaces': 'error', // @TODO @RECOMMENDED @AUTOFIX
 		// 'no-self-assign': 'error', // @TODO @RECOMMENDED
 		// 'no-setter-return': 'error', // @TODO @RECOMMENDED
 		// 'no-shadow-restricted-names': 'error', // @TODO @RECOMMENDED
@@ -220,8 +218,6 @@ module.exports = {
 		// 'no-unreachable': 'error', // @TODO @RECOMMENDED
 		// 'no-unsafe-finally': 'error', // @TODO @RECOMMENDED
 		// 'no-unsafe-negation': 'error', // @TODO @RECOMMENDED
-		// 'no-unused-labels': 'error', // @TODO @RECOMMENDED @AUTOFIX
-		// 'no-unused-vars': 'error', // @TODO @RECOMMENDED
 		// 'no-useless-catch': 'error', // @TODO @RECOMMENDED
 		// 'no-useless-escape': 'error', // @TODO @RECOMMENDED
 		// 'no-with': 'error', // @TODO @RECOMMENDED

@@ -79,26 +79,15 @@ module.exports = {
 		// redundant or incompatible with TypeScript.
 		// '@typescript-eslint/adjacent-overload-signatures': 'error', // @TODO @RECOMMENDED
 		// '@typescript-eslint/ban-ts-comment': 'error', // @TODO @RECOMMENDED
-		// '@typescript-eslint/ban-types': 'error', // @TODO @RECOMMENDED @AUTOFIX
 		// '@typescript-eslint/explicit-module-boundary-types': 'warn', // @TODO @RECOMMENDED
-		// 'no-array-constructor': 'off', // @TODO @RECOMMENDED
-		// '@typescript-eslint/no-array-constructor': 'error', // @TODO @RECOMMENDED @AUTOFIX
 		// 'no-empty-function': 'off', // @TODO @RECOMMENDED
 		// '@typescript-eslint/no-empty-function': 'error', // @TODO @RECOMMENDED
-		// '@typescript-eslint/no-empty-interface': 'error', // @TODO @RECOMMENDED @AUTOFIX
-		// '@typescript-eslint/no-explicit-any': 'warn', // @TODO @RECOMMENDED @AUTOFIX
-		// '@typescript-eslint/no-extra-non-null-assertion': 'error', // @TODO @RECOMMENDED @AUTOFIX
-		// '@typescript-eslint/no-inferrable-types': 'error', // @TODO @RECOMMENDED @AUTOFIX
 		// '@typescript-eslint/no-misused-new': 'error', // @TODO @RECOMMENDED
 		// '@typescript-eslint/no-namespace': 'error', // @TODO @RECOMMENDED
 		// '@typescript-eslint/no-non-null-asserted-optional-chain': 'error', // @TODO @RECOMMENDED
 		// '@typescript-eslint/no-non-null-assertion': 'warn', // @TODO @RECOMMENDED
 		// '@typescript-eslint/no-this-alias': 'error', // @TODO @RECOMMENDED
-		// 'no-unused-vars': 'off', // @TODO @RECOMMENDED
-		// '@typescript-eslint/no-unused-vars': 'warn', // @TODO @RECOMMENDED
 		// '@typescript-eslint/no-var-requires': 'error', // @TODO @RECOMMENDED
-		// '@typescript-eslint/prefer-as-const': 'error', // @TODO @RECOMMENDED @AUTOFIX
-		// '@typescript-eslint/prefer-namespace-keyword': 'error', // @TODO @RECOMMENDED @AUTOFIX
 		// '@typescript-eslint/triple-slash-reference': 'error', // @TODO @RECOMMENDED
 
 		// @TODO: The following rules have been adjusted by the recommended

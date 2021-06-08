@@ -51,12 +51,10 @@ module.exports = {
 		// 'no-implied-eval': 'off', // @TODO @RECOMMENDED
 		// '@typescript-eslint/no-implied-eval': 'error', // @TODO @RECOMMENDED
 		// '@typescript-eslint/no-misused-promises': 'error', // @TODO @RECOMMENDED
-		// '@typescript-eslint/no-unnecessary-type-assertion': 'error', // @TODO @RECOMMENDED @AUTOFIX
 		// '@typescript-eslint/no-unsafe-assignment': 'error', // @TODO @RECOMMENDED
 		// '@typescript-eslint/no-unsafe-call': 'error', // @TODO @RECOMMENDED
 		// '@typescript-eslint/no-unsafe-member-access': 'error', // @TODO @RECOMMENDED
 		// '@typescript-eslint/no-unsafe-return': 'error', // @TODO @RECOMMENDED
-		// '@typescript-eslint/prefer-regexp-exec': 'error', // @TODO @RECOMMENDED @AUTOFIX
 		// 'require-await': 'off', // @TODO @RECOMMENDED
 		// '@typescript-eslint/require-await': 'error', // @TODO @RECOMMENDED
 		// '@typescript-eslint/restrict-plus-operands': 'error', // @TODO @RECOMMENDED
