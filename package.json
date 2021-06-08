@@ -25,7 +25,7 @@
 		"typescript.js"
 	],
 	"scripts": {
-		"lint": "eslint .",
+		"lint": "eslint . --fix",
 		"test": "ESLINT_CONFIG_PRETTIER_NO_DEPRECATED=true eslint-find-rules --unused --deprecated --no-error ./test.js"
 	},
 	"main": "index.js",

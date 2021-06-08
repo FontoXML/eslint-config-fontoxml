@@ -12,17 +12,17 @@ module.exports = {
 		'accessor-pairs': 'off',
 		'array-callback-return': 'error',
 		'block-scoped-var': 'error',
-		'camelcase': 'off', // @TODO
+		camelcase: 'off', // @TODO
 		'capitalized-comments': 'off', // @AUTOFIX
 		'class-methods-use-this': 'off', // @TODO
-		'complexity': ['warn', 14],
+		complexity: ['warn', 14],
 		'consistent-return': 'error',
 		'consistent-this': 'off', // @TODO
 		'default-case-last': 'off', // @TODO
 		'default-case': 'off',
 		'default-param-last': 'off', // @TODO
 		'dot-notation': 'off',
-		'eqeqeq': ['error', 'always'],
+		eqeqeq: ['error', 'always'],
 		'func-name-matching': 'off', // @TODO
 		'func-names': 'off', // @TODO
 		'func-style': 'off', // @TODO
@@ -156,7 +156,7 @@ module.exports = {
 		'prefer-rest-params': 'off', // @TODO
 		'prefer-spread': 'off', // @TODO
 		'prefer-template': 'warn', // @AUTOFIX
-		'radix': 'off', // @TODO
+		radix: 'off', // @TODO
 		'require-atomic-updates': 'off', // @TODO
 		'require-await': 'off', // @TODO
 		'require-unicode-regexp': 'off', // @TODO
@@ -166,10 +166,10 @@ module.exports = {
 		'sort-keys': 'off', // @TODO
 		'sort-vars': 'off', // @AUTOFIX
 		'spaced-comment': 'warn', // @AUTOFIX
-		'strict': 'off', // @AUTOFIX
+		strict: 'off', // @AUTOFIX
 		'symbol-description': 'off', // @TODO
 		'vars-on-top': 'off', // @TODO
-		'yoda': 'error', // @AUTOFIX
+		yoda: 'error', // @AUTOFIX
 
 		// @TODO: Check the special-case rules of eslint-config-prettier and
 		// determine whether they need to be enabled anyway. Move the
