@@ -17,22 +17,22 @@ module.exports = {
 		'react/forbid-elements': 'off', // @TODO
 		'react/forbid-foreign-prop-types': 'off', // @TODO
 		'react/forbid-prop-types': 'off', // @TODO
-		'react/function-component-definition': 'off', // @TODO @AUTOFIX
-		'react/jsx-boolean-value': 'off', // @TODO @AUTOFIX
-		'react/jsx-curly-brace-presence': 'off', // @TODO @AUTOFIX
+		'react/function-component-definition': 'off', // @AUTOFIX
+		'react/jsx-boolean-value': 'off', // @AUTOFIX
+		'react/jsx-curly-brace-presence': 'off', // @AUTOFIX
 		'react/jsx-filename-extension': 'off', // @TODO
-		'react/jsx-fragments': 'off', // @TODO @AUTOFIX
+		'react/jsx-fragments': ['warn', 'syntax'], // @AUTOFIX
 		'react/jsx-handler-names': 'off', // @TODO
 		'react/jsx-max-depth': 'off', // @TODO
 		'react/jsx-no-bind': 'off', // @TODO
 		'react/jsx-no-constructed-context-values': 'off', // @TODO
 		'react/jsx-no-literals': 'off', // @TODO
 		'react/jsx-no-script-url': 'off', // @TODO
-		'react/jsx-no-useless-fragment': 'off', // @TODO @AUTOFIX
+		'react/jsx-no-useless-fragment': 'warn', // @AUTOFIX
 		'react/jsx-pascal-case': 'off', // @TODO
 		'react/jsx-props-no-spreading': 'off', // @TODO
 		'react/jsx-sort-default-props': 'off', // @TODO
-		'react/jsx-sort-props': 'off', // @TODO @AUTOFIX
+		'react/jsx-sort-props': 'off', // @AUTOFIX
 		'react/no-access-state-in-setstate': 'off', // @TODO
 		'react/no-adjacent-inline-elements': 'off', // @TODO
 		'react/no-array-index-key': 'off', // @TODO
@@ -49,11 +49,11 @@ module.exports = {
 		'react/no-unused-state': 'off', // @TODO
 		'react/no-will-update-set-state': 'off', // @TODO
 		'react/prefer-es6-class': 'off', // @TODO
-		'react/prefer-read-only-props': 'off', // @TODO @AUTOFIX
+		'react/prefer-read-only-props': 'off', // @AUTOFIX
 		'react/prefer-stateless-function': 'off', // @TODO
 		'react/require-default-props': 'off', // @TODO
 		'react/require-optimization': 'off', // @TODO
-		'react/self-closing-comp': 'off', // @TODO @AUTOFIX
+		'react/self-closing-comp': 'warn', // @AUTOFIX
 		'react/sort-comp': 'off', // @TODO
 		'react/sort-prop-types': 'off', // @TODO
 		'react/state-in-constructor': 'off', // @TODO
@@ -67,7 +67,6 @@ module.exports = {
 		// 'react/jsx-key': 2, // @TODO @RECOMMENDED
 		// 'react/jsx-no-comment-textnodes': 2, // @TODO @RECOMMENDED
 		// 'react/jsx-no-duplicate-props': 2, // @TODO @RECOMMENDED
-		// 'react/jsx-no-target-blank': 2, // @TODO @RECOMMENDED @AUTOFIX
 		// 'react/jsx-no-undef': 2, // @TODO @RECOMMENDED
 		// 'react/jsx-uses-react': 2, // @TODO @RECOMMENDED
 		// 'react/jsx-uses-vars': 2, // @TODO @RECOMMENDED
@@ -80,7 +79,6 @@ module.exports = {
 		// 'react/no-render-return-value': 2, // @TODO @RECOMMENDED
 		// 'react/no-string-refs': 2, // @TODO @RECOMMENDED
 		// 'react/no-unescaped-entities': 2, // @TODO @RECOMMENDED
-		// 'react/no-unknown-property': 2, // @TODO @RECOMMENDED @AUTOFIX
 		// 'react/no-unsafe': 0, // @TODO @RECOMMENDED
 		// 'react/prop-types': 2, // @TODO @RECOMMENDED
 		// 'react/react-in-jsx-scope': 2, // @TODO @RECOMMENDED
