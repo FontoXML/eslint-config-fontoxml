@@ -8,6 +8,6 @@ module.exports = {
 	rules: {
 		'@babel/new-cap': 'off', // @TODO
 		'@babel/no-invalid-this': 'off', // @TODO
-		'@babel/no-unused-expressions': 'off', // @TODO
+		'@babel/no-unused-expressions': 'warn',
 	},
 };

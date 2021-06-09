@@ -18,6 +18,7 @@ module.exports = {
 		complexity: ['warn', 20],
 		'consistent-return': 'error',
 		'consistent-this': 'off', // @TODO
+		curly: ['warn', 'all'], // @PRETTIER @AUTOFIX
 		'default-case-last': 'off', // @TODO
 		'default-case': 'off',
 		'default-param-last': 'off', // @TODO
@@ -26,8 +27,6 @@ module.exports = {
 		'func-name-matching': 'off', // @TODO
 		'func-names': 'off', // @TODO
 		'func-style': 'off', // @TODO
-		// Override: Allow implictly returning undefined.
-		'getter-return': ['error', { allowImplicit: true }],
 		'grouped-accessor-pairs': 'off',
 		'guard-for-in': 'off',
 		'id-denylist': 'off', // @TODO
@@ -49,7 +48,7 @@ module.exports = {
 		// See: https://www.npmjs.com/package/@babel/eslint-plugin
 		'new-cap': 'off',
 		'no-alert': 'warn',
-		'no-array-constructor': 'off', // @TODO
+		'no-array-constructor': 'warn',
 		'no-await-in-loop': 'off', // @TODO
 		'no-bitwise': 'off', // @TODO
 		'no-caller': 'error',
@@ -68,7 +67,7 @@ module.exports = {
 		'no-implicit-coercion': 'off',
 		'no-implicit-globals': 'error',
 		'no-implied-eval': 'error',
-		'no-inline-comments': 'off', // @TODO
+		'no-inline-comments': 'off',
 		// Turned off for @babel/eslint-plugin.
 		// See: https://www.npmjs.com/package/@babel/eslint-plugin
 		'no-invalid-this': 'off',
@@ -85,7 +84,7 @@ module.exports = {
 		'no-negated-condition': 'off', // @TODO
 		'no-nested-ternary': 'off', // @TODO
 		'no-new-func': 'off',
-		'no-new-object': 'off', // @TODO
+		'no-new-object': 'warn',
 		'no-new-wrappers': 'error',
 		'no-new': 'error',
 		'no-nonoctal-decimal-escape': 'off', // @TODO
@@ -95,7 +94,13 @@ module.exports = {
 		'no-promise-executor-return': 'off', // @TODO
 		'no-proto': 'error',
 		'no-restricted-exports': 'off',
-		'no-restricted-globals': 'off', // @TODO
+		'no-restricted-globals': [
+			'error',
+			'document',
+			'error',
+			'event',
+			'status',
+		],
 		'no-restricted-imports': 'off', // @TODO
 		'no-restricted-properties': 'off',
 		'no-restricted-syntax': 'off',
@@ -104,7 +109,10 @@ module.exports = {
 		'no-script-url': 'error',
 		'no-self-compare': 'error',
 		'no-sequences': 'error',
-		'no-shadow': 'off', // @TODO
+		'no-shadow': [
+			'warn',
+			{ builtinGlobals: false, hoist: 'all', allow: [] },
+		],
 		'no-template-curly-in-string': 'off', // @TODO
 		'no-ternary': 'off', // @TODO
 		'no-throw-literal': 'off',
@@ -130,7 +138,7 @@ module.exports = {
 				varsIgnorePattern: '^_',
 			},
 		], // @RECOMMENDED
-		'no-use-before-define': 'off', // @TODO
+		'no-use-before-define': 'off',
 		'no-useless-backreference': 'off', // @TODO
 		'no-useless-call': 'off', // @TODO
 		'no-useless-computed-key': 'warn', // @AUTOFIX
@@ -156,7 +164,7 @@ module.exports = {
 		'prefer-rest-params': 'off', // @TODO
 		'prefer-spread': 'off', // @TODO
 		'prefer-template': 'warn', // @AUTOFIX
-		radix: 'off', // @TODO
+		radix: 'off',
 		'require-atomic-updates': 'off', // @TODO
 		'require-await': 'off', // @TODO
 		'require-unicode-regexp': 'off', // @TODO
@@ -170,20 +178,6 @@ module.exports = {
 		'symbol-description': 'off', // @TODO
 		'vars-on-top': 'off', // @TODO
 		yoda: 'error', // @AUTOFIX
-
-		// @TODO: Check the special-case rules of eslint-config-prettier and
-		// determine whether they need to be enabled anyway. Move the
-		// plugin-specific ones to their respective config files.
-		// See: https://www.npmjs.com/package/eslint-config-prettier
-		// 'curly': 0, // @TODO @PRETTIER @AUTOFIX
-		// 'lines-around-comment': 0, // @TODO @PRETTIER @AUTOFIX
-		// 'max-len': 0, // @TODO @PRETTIER
-		// 'no-confusing-arrow': 0, // @TODO @PRETTIER @AUTOFIX
-		// 'no-mixed-operators': 0, // @TODO @PRETTIER
-		// 'no-tabs': 0, // @TODO @PRETTIER
-		// 'no-unexpected-multiline': 0, // @TODO @PRETTIER
-		// 'quotes': 0, // @TODO @PRETTIER @AUTOFIX
-		// '@typescript-eslint/quotes': 0, // @TODO @PRETTIER @AUTOFIX
 
 		// @TODO: Check the rules recommended by eslint and determine whether
 		// they require an override. If not, remove them here.
@@ -223,7 +217,6 @@ module.exports = {
 		// 'no-redeclare': 'error', // @TODO @RECOMMENDED
 		// 'no-self-assign': 'error', // @TODO @RECOMMENDED
 		// 'no-setter-return': 'error', // @TODO @RECOMMENDED
-		// 'no-shadow-restricted-names': 'error', // @TODO @RECOMMENDED
 		// 'no-sparse-arrays': 'error', // @TODO @RECOMMENDED
 		// 'no-this-before-super': 'error', // @TODO @RECOMMENDED
 		// 'no-undef': 'error', // @TODO @RECOMMENDED
