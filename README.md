@@ -14,6 +14,7 @@ A handful of additional (development) dependencies are required for this configu
 
 -   [@babel/eslint-plugin](https://www.npmjs.com/package/@babel/eslint-plugin)@7.13.16
 -   [eslint](https://www.npmjs.com/package/eslint)@7.27.0
+-   [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)@8.3.0
 -   [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@2.23.3
 -   [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)@3.4.0
 -   [eslint-plugin-simple-import-sort](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)@7.0.0

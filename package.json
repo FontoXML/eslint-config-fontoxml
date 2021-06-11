@@ -1,6 +1,6 @@
 {
 	"name": "@fontoxml/eslint-config",
-	"version": "4.0.0-beta.1",
+	"version": "4.0.0-beta.2",
 	"license": "MIT",
 	"author": "Fonto",
 	"description": "Fonto's opiniated ESLint base configuration.",
@@ -33,13 +33,13 @@
 		"@babel/core": "7.14.3",
 		"@babel/eslint-parser": "7.14.3",
 		"@babel/plugin-syntax-jsx": "7.12.13",
-		"@typescript-eslint/parser": "4.24.0",
-		"eslint-config-prettier": "8.3.0"
+		"@typescript-eslint/parser": "4.24.0"
 	},
 	"devDependencies": {
 		"@babel/eslint-plugin": "7.13.16",
 		"@typescript-eslint/eslint-plugin": "4.25.0",
 		"eslint": "7.27.0",
+		"eslint-config-prettier": "8.3.0",
 		"eslint-find-rules": "3.6.1",
 		"eslint-plugin-import": "2.23.3",
 		"eslint-plugin-prettier": "3.4.0",
@@ -53,6 +53,7 @@
 		"@babel/eslint-plugin": "7.13.16",
 		"@typescript-eslint/eslint-plugin": "4.25.0",
 		"eslint": "7.27.0",
+		"eslint-config-prettier": "8.3.0",
 		"eslint-plugin-import": "2.23.3",
 		"eslint-plugin-prettier": "3.4.0",
 		"eslint-plugin-react": "7.23.2",
