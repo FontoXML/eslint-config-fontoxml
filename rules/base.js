@@ -109,10 +109,7 @@ module.exports = {
 		'no-script-url': 'error',
 		'no-self-compare': 'error',
 		'no-sequences': 'error',
-		'no-shadow': [
-			'warn',
-			{ builtinGlobals: false, hoist: 'all', allow: [] },
-		],
+		'no-shadow': 'off',
 		'no-template-curly-in-string': 'off', // @TODO
 		'no-ternary': 'off', // @TODO
 		'no-throw-literal': 'off',
