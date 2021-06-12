@@ -18,7 +18,6 @@ module.exports = {
 		complexity: ['warn', 20],
 		'consistent-return': 'error',
 		'consistent-this': 'off', // @TODO
-		curly: ['warn', 'all'], // @PRETTIER @AUTOFIX
 		'default-case-last': 'off', // @TODO
 		'default-case': 'off',
 		'default-param-last': 'off', // @TODO

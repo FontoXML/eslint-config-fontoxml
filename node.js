@@ -3,5 +3,8 @@ module.exports = {
 		node: true,
 	},
 	// @TODO: Consider configuring https://www.npmjs.com/package/eslint-plugin-node
-	extends: [],
+	extends: [
+		// @NOTE: Always extend the Prettier rules last.
+		'./rules/prettier',
+	],
 };

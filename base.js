@@ -5,11 +5,12 @@ module.exports = {
 	// @TODO: Consider configuring https://www.npmjs.com/package/eslint-plugin-jsdoc
 	// @TODO: Consider configuring https://www.npmjs.com/package/eslint-plugin-eslint-comments
 	extends: [
-		'./rules/prettier',
 		'./rules/base',
 		'./rules/babel',
 		'./rules/import',
 		'./rules/import-sort',
+		// @NOTE: Always extend the Prettier rules last.
+		'./rules/prettier',
 	],
 	// @NOTE: Consider switching back to ESLint's default parser (Espree) once
 	// it supports class fields.

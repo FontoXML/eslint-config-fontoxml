@@ -3,7 +3,11 @@ module.exports = {
 		{
 			// @NOTE: These rules are not included in the default configuration
 			// because they require project-specific (TypeScript) configuration.
-			extends: ['./rules/typeinfo'],
+			extends: [
+				'./rules/typeinfo',
+				// @NOTE: Always extend the Prettier rules last.
+				'./rules/prettier',
+			],
 			files: ['*.ts', '*.tsx'],
 		},
 	],
