@@ -15,7 +15,7 @@ module.exports = {
 		camelcase: 'off', // @TODO
 		'capitalized-comments': 'off', // @AUTOFIX
 		'class-methods-use-this': 'off', // @TODO
-		complexity: ['warn', 20],
+		complexity: ['off'],
 		'consistent-return': 'error',
 		'consistent-this': 'off', // @TODO
 		'default-case-last': 'off', // @TODO
