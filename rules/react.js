@@ -19,7 +19,7 @@ module.exports = {
 		'react/forbid-prop-types': 'off', // @TODO
 		'react/function-component-definition': 'off', // @AUTOFIX
 		'react/jsx-boolean-value': 'off', // @AUTOFIX
-		'react/jsx-curly-brace-presence': 'off', // @AUTOFIX
+		'react/jsx-curly-brace-presence': ['warn', 'never'], // @AUTOFIX
 		'react/jsx-filename-extension': 'off', // @TODO
 		'react/jsx-fragments': ['warn', 'syntax'], // @AUTOFIX
 		'react/jsx-handler-names': 'off', // @TODO
@@ -28,7 +28,7 @@ module.exports = {
 		'react/jsx-no-constructed-context-values': 'off', // @TODO
 		'react/jsx-no-literals': 'off', // @TODO
 		'react/jsx-no-script-url': 'off', // @TODO
-		'react/jsx-no-useless-fragment': 'warn', // @AUTOFIX
+		'react/jsx-no-useless-fragment': ['warn', { allowExpressions: true }], // @AUTOFIX
 		'react/jsx-pascal-case': 'off', // @TODO
 		'react/jsx-props-no-spreading': 'off', // @TODO
 		'react/jsx-sort-default-props': 'off', // @TODO
