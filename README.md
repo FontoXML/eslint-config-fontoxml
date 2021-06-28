@@ -12,25 +12,25 @@ npm install --save-dev @fontoxml/eslint-config
 
 A handful of additional (development) dependencies are required for this configuration to work. Make sure to at least install:
 
--   [@babel/eslint-plugin](https://www.npmjs.com/package/@babel/eslint-plugin)@7.13.16
--   [eslint](https://www.npmjs.com/package/eslint)@7.27.0
+-   [@babel/eslint-plugin](https://www.npmjs.com/package/@babel/eslint-plugin)@7.14.5
+-   [eslint](https://www.npmjs.com/package/eslint)@7.29.0
 -   [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)@8.3.0
--   [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@2.23.3
+-   [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@2.23.4
 -   [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)@3.4.0
 -   [eslint-plugin-simple-import-sort](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)@7.0.0
--   [prettier](https://www.npmjs.com/package/prettier)@2.3.0
+-   [prettier](https://www.npmjs.com/package/prettier)@2.3.2
 
 This suffices for linting (most) JavaScript (`.js`).
 
 If you like to use this configuration to lint React/JSX (`.jsx`), also install the following:
 
--   [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@7.23.2
+-   [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@7.24.0
 -   [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@4.2.0
 
 And for TypeScript (`.ts` and `.tsx`):
 
--   [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)@4.15.0
--   [typescript](https://www.npmjs.com/package/typescript)@4.3.2
+-   [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)@4.28.0
+-   [typescript](https://www.npmjs.com/package/typescript)@4.3.4
 
 ## Usage
 
