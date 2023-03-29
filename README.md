@@ -24,8 +24,8 @@ This suffices for linting (most) JavaScript (`.js`).
 
 If you like to use this configuration to lint React/JSX (`.jsx`), also install the following:
 
--   [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@7.24.0
--   [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@4.2.0
+-   [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@7.32.2
+-   [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@4.6.0
 
 And for TypeScript (`.ts` and `.tsx`):
 
