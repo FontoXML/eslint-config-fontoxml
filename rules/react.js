@@ -29,10 +29,7 @@ module.exports = {
 		'react/jsx-max-depth': 'off', // @TODO
 		'react/jsx-no-bind': 'off', // @TODO
 		'react/jsx-no-constructed-context-values': 'off', // @TODO
-		'react/jsx-no-leaked-render': [
-			'warn',
-			{ validStrategies: ['ternary', 'coerce'] },
-		], // @AUTOFIX
+		'react/jsx-no-leaked-render': 'off', // @AUTOFIX
 		'react/jsx-no-literals': 'off', // @TODO
 		'react/jsx-no-script-url': 'off', // @TODO
 		'react/jsx-no-useless-fragment': ['warn', { allowExpressions: true }], // @AUTOFIX
