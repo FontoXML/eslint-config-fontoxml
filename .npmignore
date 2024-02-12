@@ -1,6 +1,1 @@
-node_modules/
-.eslintrc.js
-.gitignore
-.prettierrc.js
-CONTRIBUTING.md
-test.js
+.vscode/

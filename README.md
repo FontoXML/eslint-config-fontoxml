@@ -2,6 +2,8 @@
 
 Opiniated [ESLint](https://eslint.org/) (and [Prettier](https://prettier.io/)) configuration used by Fonto.
 
+@TODO: some default setup, suitable for JS, React, TS. Optimized for TS. Type aware rules, strict on. Also prettier config; linter does not format. For JS projects, consider adding plugins like import.
+
 ## Installation
 
 Install this package in your project as a development dependency:
