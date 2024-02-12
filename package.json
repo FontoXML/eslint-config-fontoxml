@@ -1,75 +1,56 @@
 {
 	"name": "@fontoxml/eslint-config",
-	"version": "4.1.1",
+	"version": "5.0.0",
 	"license": "MIT",
 	"author": "Fonto",
 	"description": "Fonto's opiniated ESLint base configuration.",
 	"keywords": [
-		"eslint",
-		"config",
 		"fonto",
-		"fontoxml"
+		"fontoxml",
+		"linter",
+		"formatter",
+		"config",
+		"eslint",
+		"prettier"
 	],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/FontoXML/eslint-config-fontoxml.git"
 	},
 	"files": [
-		"rules",
-		"base.js",
-		"index.js",
-		"node.js",
-		"prettier.js",
-		"react.js",
-		"typeinfo.js",
-		"typescript.js"
+		"eslint.config.js",
+		"prettier.config.js"
 	],
-	"scripts": {
-		"lint": "eslint . --fix",
-		"test": "ESLINT_CONFIG_PRETTIER_NO_DEPRECATED=true eslint-find-rules --unused --deprecated --no-error ./test.js"
+	"engines": {
+		"node": ">=22.13",
+		"npm": ">=10"
 	},
-	"main": "index.js",
+	"scripts": {
+		"lint": "eslint . --fix"
+	},
+	"main": "eslint.config.js",
+	"type": "module",
 	"dependencies": {
-		"@babel/core": "7.14.6",
-		"@babel/eslint-parser": "7.14.7",
-		"@babel/plugin-syntax-jsx": "7.14.5",
-		"@typescript-eslint/parser": "4.28.0"
+		"@eslint/js": "9.29.0",
+		"@typescript-eslint/eslint-plugin": "8.35.0",
+		"@typescript-eslint/parser": "8.35.0",
+		"eslint-config-prettier": "10.1.5",
+		"eslint-plugin-import": "2.32.0",
+		"eslint-plugin-react": "7.37.5",
+		"eslint-plugin-react-hooks": "5.2.0"
 	},
 	"devDependencies": {
-		"@babel/eslint-plugin": "7.14.5",
-		"@typescript-eslint/eslint-plugin": "4.28.0",
-		"eslint": "7.29.0",
-		"eslint-config-prettier": "8.3.0",
-		"eslint-find-rules": "4.1.0",
-		"eslint-plugin-import": "2.23.4",
-		"eslint-plugin-prettier": "3.4.0",
-		"eslint-plugin-react": "7.32.2",
-		"eslint-plugin-react-hooks": "4.6.0",
-		"eslint-plugin-simple-import-sort": "7.0.0",
-		"prettier": "2.3.2",
-		"typescript": "4.3.4"
+		"eslint": "9.29.0",
+		"prettier": "3.6.2",
+		"typescript": "5.8.3"
 	},
 	"peerDependencies": {
-		"@babel/eslint-plugin": "7.14.5",
-		"@typescript-eslint/eslint-plugin": "4.28.0",
-		"eslint": "7.29.0",
-		"eslint-config-prettier": "8.3.0",
-		"eslint-plugin-import": "2.23.4",
-		"eslint-plugin-prettier": "3.4.0",
-		"eslint-plugin-react": "7.32.2",
-		"eslint-plugin-react-hooks": "4.6.0",
-		"eslint-plugin-simple-import-sort": "7.0.0",
-		"prettier": "2.3.2",
-		"typescript": "4.3.4"
+		"eslint": "9.29.0",
+		"prettier": "3.6.2",
+		"typescript": "5.8.3"
 	},
 	"peerDependenciesMeta": {
-		"@typescript-eslint/eslint-plugin": {
-			"optional": true
-		},
-		"eslint-plugin-react": {
-			"optional": true
-		},
-		"eslint-plugin-react-hooks": {
+		"prettier": {
 			"optional": true
 		},
 		"typescript": {
