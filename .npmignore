@@ -1,6 +1,4 @@
-node_modules/
-.eslintrc.js
-.gitignore
-.prettierrc.js
-CONTRIBUTING.md
-test.js
+.vscode/
+# @TODO: Remove before release.
+test-package/
+tsconfig.json
