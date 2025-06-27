@@ -1,7 +1,7 @@
 import js from '@eslint/js';
 import typeScriptPlugin from '@typescript-eslint/eslint-plugin';
 import typeScriptParser from '@typescript-eslint/parser';
-import prettierConfig from 'eslint-config-prettier';
+import prettierConfig from 'eslint-config-prettier/flat';
 import importPlugin from 'eslint-plugin-import';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
@@ -37,7 +37,7 @@ export default [
 		rules: {
 			...reactPlugin.configs['recommended'].rules,
 			...reactPlugin.configs['jsx-runtime'].rules,
-			...reactHooksPlugin.configs['recommended'].rules,
+			...reactHooksPlugin.configs['recommended-latest'].rules,
 		},
 	},
 	{
@@ -125,7 +125,6 @@ export default [
 	{
 		name: 'fontoxml/prettier',
 		rules: {
-			// @TODO: Evaluate https://eslint.style/ as an alternative.
 			...prettierConfig.rules,
 		},
 	},
