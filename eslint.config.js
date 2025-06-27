@@ -17,6 +17,8 @@ export default [
 		},
 		rules: {
 			...js.configs['recommended'].rules,
+			'eqeqeq': 'error',
+			'no-console': 'error',
 		},
 	},
 	{
@@ -54,6 +56,11 @@ export default [
 			...typeScriptPlugin.configs['stylistic-type-checked'].rules,
 
 			// Additional rules not included in the presets.
+			'@typescript-eslint/consistent-indexed-object-style': [
+				'error',
+				'index-signature',
+			],
+			'@typescript-eslint/consistent-type-definitions': ['error', 'type'],
 			'@typescript-eslint/consistent-type-imports': [
 				'error',
 				{
@@ -62,6 +69,22 @@ export default [
 					disallowTypeAnnotations: true,
 				},
 			],
+			'@typescript-eslint/explicit-member-accessibility': 'error',
+			'@typescript-eslint/no-invalid-void-type': ['error', { allowAsThisParameter: true}],
+			'@typescript-eslint/no-unnecessary-type-parameters': 'off',
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{
+					argsIgnorePattern: '^_',
+					destructuredArrayIgnorePattern: '^_',
+					caughtErrorsIgnorePattern: '^_',
+				},
+			],
+			'@typescript-eslint/restrict-template-expressions': [
+				'error',
+				{ allowNumber: true, allowBoolean: true, allowNullish: true },
+			],
+			'@typescript-eslint/sort-type-constituents': 'error',
 		},
 	},
 	{
