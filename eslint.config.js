@@ -8,6 +8,7 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
 	{
+		name: 'fontoxml/base',
 		files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
 		languageOptions: {
 			parser: typeScriptParser,
@@ -22,6 +23,7 @@ export default [
 		},
 	},
 	{
+		name: 'fontoxml/react',
 		files: ['**/*.jsx', '**/*.tsx'],
 		settings: {
 			react: {
@@ -39,6 +41,7 @@ export default [
 		},
 	},
 	{
+		name: 'fontoxml/typescript',
 		files: ['**/*.ts', '**/*.tsx'],
 		plugins: {
 			'@typescript-eslint': typeScriptPlugin,
@@ -88,6 +91,7 @@ export default [
 		},
 	},
 	{
+		name: 'fontoxml/import',
 		plugins: {
 			import: importPlugin,
 		},
@@ -119,6 +123,7 @@ export default [
 		},
 	},
 	{
+		name: 'fontoxml/prettier',
 		rules: {
 			// @TODO: Evaluate https://eslint.style/ as an alternative.
 			...prettierConfig.rules,
