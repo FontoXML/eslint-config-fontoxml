@@ -15,7 +15,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/FontoXML/eslint-config-fontoxml.git"
+		"url": "git+https://github.com/FontoXML/eslint-config-fontoxml.git"
 	},
 	"files": [
 		"eslint.config.js",
