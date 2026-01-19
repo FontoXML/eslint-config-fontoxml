@@ -57,10 +57,13 @@ const configFonto = require('@fontoxml/eslint-config');
 const globals = require('globals');
 
 module.exports = [
+	{
+		name: 'fontoxml/global-ignores',
+		ignores: ['platform/**', '**/assets/**'],
+	},
 	...configFonto.default,
 	{
-		name: 'fontoxml/editor',
-		ignores: ['platform/**', '**/assets/**'],
+		name: 'fontoxml/settings',
 		settings: {
 			// Explicitly set the React version because this repository has no
 			// React dependency. Should be in sync with 'fontoxml-vendors'.
@@ -98,10 +101,13 @@ import configFonto from '@fontoxml/eslint-config';
 import globals from 'globals';
 
 export default [
+	{
+		name: 'fontoxml/global-ignores',
+		ignores: ['platform/**', '**/assets/**'],
+	},
 	...configFonto,
 	{
-		name: 'fontoxml/editor',
-		ignores: ['platform/**', '**/assets/**'],
+		name: 'fontoxml/settings',
 		settings: {
 			// Explicitly set the React version because this
 			// repository has no React dependency. Should be

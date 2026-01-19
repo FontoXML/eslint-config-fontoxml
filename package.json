@@ -1,6 +1,6 @@
 {
 	"name": "@fontoxml/eslint-config",
-	"version": "5.0.0",
+	"version": "5.0.1",
 	"license": "MIT",
 	"author": "Fonto",
 	"description": "Fonto's opiniated ESLint base configuration.",
